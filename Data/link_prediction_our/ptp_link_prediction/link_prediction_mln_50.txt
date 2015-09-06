@@ -1,0 +1,27 @@
+#domains
+prof={0,..., 39}
+student={0, ..., 49}
+
+#predicates
+WorksInArea0(prof)
+WorksInArea1(prof)
+WorksInArea2(prof)
+InterestedArea0(student)
+InterestedArea1(student)
+InterestedArea2(student)
+Advises(prof,student)
+CoAuthor(prof,student)
+
+#formulas
+(WorksInArea0(x))::1
+(InterestedArea0(x))::2
+(WorksInArea1(x))::1
+(InterestedArea1(x))::2
+(WorksInArea2(x))::1
+(InterestedArea2(x))::2
+(Advises(x,y))::2
+(CoAuthor(x,y))::3
+(!WorksInArea0(x) | !InterestedArea0(y) | Advises(x,y))::2
+(!WorksInArea1(x) | !InterestedArea1(y) | Advises(x,y))::2
+(!WorksInArea2(x) | !InterestedArea2(y) | Advises(x,y))::2
+(!Advises(x,y) | CoAuthor(x,y))::3

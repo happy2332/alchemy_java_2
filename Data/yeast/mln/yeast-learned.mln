@@ -1,0 +1,38 @@
+//predicate declarations
+location(protein,location_id)
+interaction(protein,protein)
+protein_class(protein,pc_id)
+enzyme(protein,enzyme_id)
+function(protein,func_id)
+complex(protein,complex_id)
+phenotype(protein,phenotype_id)
+
+//function declarations
+
+// -2.90341  interaction(a1,a2)
+-2.90341  interaction(a1,a2)
+
+// -2.59495  function(a1,a2)
+-2.59495  function(a1,a2)
+
+// 2.06131  interaction(a1,a2) v !interaction(a2,a1)
+2.06131  interaction(a1,a2) v !interaction(a2,a1)
+
+// 0.16735  !phenotype(a1,a2) v function(a1,a3)
+0.16735  function(a1,a2) v !phenotype(a1,a3)
+
+// -3.05229  location(a1,a2)
+-3.05229  location(a1,a2)
+
+// -5.46966  protein_class(a1,a2)
+-5.46966  protein_class(a1,a2)
+
+// -5.58834  enzyme(a1,a2)
+-5.58834  enzyme(a1,a2)
+
+// -5.43012  complex(a1,a2)
+-5.43012  complex(a1,a2)
+
+// 0.0362149  phenotype(a1,a2)
+0.0362149  phenotype(a1,a2)
+

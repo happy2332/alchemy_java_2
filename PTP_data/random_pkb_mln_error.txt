@@ -1,0 +1,12 @@
+#domains
+dom={0,1,2,3}
+#predicates
+P0(dom)
+P1(dom)
+P2(dom)
+P3(dom)
+P4(dom)
+#formulas
+(P2(x3) | !P2(x1) | P4(x1))::0.0001
+(P2(x1) | P1(x3) | P3(x1))::0.0001
+(!P2(x0) | !P4(x1) | !P3(x1))::0.0001

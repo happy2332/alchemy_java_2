@@ -1,0 +1,14 @@
+#domains
+dom1={0, ..., 159}
+
+#predicates
+C(dom1)
+S(dom1)
+F(dom1,dom1)
+
+#formulas
+(!S(x)) :: 1
+(!C(x)) :: 2
+(!F(x,y)) :: 3
+( !S(x) | C(x)) :: 2
+( !S(x) | !F(x,y) | S(y)) :: 3

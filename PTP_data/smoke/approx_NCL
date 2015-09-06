@@ -1,0 +1,15 @@
+smoker data
+dom size = 30
+evidence 30%
+Z = 1.6690711829292934E146
+Time taken for 100 iterations : 78.991 sec
+
+dom size=50
+evidence 50%
+Z = 1.0862221717113457E260
+Time taken for 100 iterations : 123.203 sec
+
+dom size=50
+evidence 90%
+Time taken for 100 iterations : 19.869 sec
+Z = 5.2357931197551565E25

@@ -1,0 +1,6 @@
+!WorksInArea0(6)
+WorksInArea1(6)
+!WorksInArea2(6)
+WorksInArea0(3)
+!WorksInArea1(3)
+!WorksInArea2(3)

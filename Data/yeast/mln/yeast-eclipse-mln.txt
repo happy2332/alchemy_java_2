@@ -1,0 +1,84 @@
+//predicate declarations
+
+//function declarations
+
+// 0.141668  complex(p2,c1) ^ interaction(p1,p2) => complex(p1,c1)
+
+// 0.176421  protein_class(p2,c1) ^ interaction(p1,p2) => protein_class(p1,c1)
+
+// 0.931726  enzyme(p2,c1) ^ interaction(p1,p2) => enzyme(p1,c1)
+
+// 0.128166  function(p2,c1) ^ interaction(p1,p2) => function(p1,c1)
+
+// 0.103444  location(p2,c1) ^ interaction(p1,p2) => location(p1,c1)
+
+// 0.269831  phenotype(p2,c1) ^ interaction(p1,p2) => phenotype(p1,c1)
+
+// 0.240178  interaction(p1,p3) ^ interaction(p2,p3) => interaction(p1,p2)
+//0.240178  interaction(a1,a2) v !interaction(a1,a3) v !interaction(a2,a3)
+
+// 1.2777  complex(p1,c1) ^ complex(p2,c1) => interaction(p1,p2)
+
+// 1.247   protein_class(p1,c1) ^ protein_class(p2,c1) => interaction(p1,p2)
+
+// 1.85601  enzyme(p1,c1) ^ enzyme(p2,c1) => interaction(p1,p2)
+
+// -0.011287  function(p1,c1) ^ function(p2,c1) => interaction(p1,p2)
+
+// -0.00783262  location(p1,c1) ^ location(p2,c1) => interaction(p1,p2)
+
+// 0.0156973  phenotype(p1,c1) ^ phenotype(p2,c1) => interaction(p1,p2)
+
+// -0.414426  complex(a1,a2)
+
+// -0.581602  enzyme(a1,a2)
+
+// -3.49031  location(a1,a2)
+
+// -0.465524  protein_class(a1,a2)
+
+// -2.72881  phenotype(a1,a2)
+
+// -3.26969  function(a1,a2)
+
+// -1.85432  interaction(a1,a2)
+
+//func_id={Func_id_,Func_id_1,Func_id_10,Func_id_10001009,Func_id_1001003,Func_id_1005001007,Func_id_1025,Func_id_11,Func_id_11002,Func_id_12,Func_id_14,Func_id_16,Func_id_16021,Func_id_18002,Func_id_2,Func_id_20,Func_id_20001,Func_id_20009016009,Func_id_20009018009,Func_id_30,Func_id_30005002,Func_id_32,Func_id_32005,Func_id_34,Func_id_34011,Func_id_38,Func_id_40,Func_id_41001,Func_id_42,Func_id_42027,Func_id_43001002,Func_id_43001003}
+#domains
+func_id={0, ... ,31}
+phenotype_id={0, ... ,73}
+enzyme_id={0, ... ,38}
+complex_id={0, ... ,63}
+pc_id={0, ... ,57}
+protein={0, ... ,383}
+location_id={0, ... ,37}
+
+#predicates
+function(protein,func_id)
+interaction(protein,protein)
+protein_class(protein,pc_id)
+enzyme(protein,enzyme_id)
+complex(protein,complex_id)
+location(protein,location_id)
+phenotype(protein,phenotype_id)
+
+#formulas
+(complex(a1,a2) | !complex(a3,a2) | !interaction(a1,a3))::0.141668
+(protein_class(a1,a2) | !protein_class(a3,a2) | !interaction(a1,a3))::0.176421
+(enzyme(a1,a2) | !enzyme(a3,a2) | !interaction(a1,a3))::0.931726
+(function(a1,a2) | !function(a3,a2) | !interaction(a1,a3))::0.128166
+(location(a1,a2) | !location(a3,a2) | !interaction(a1,a3))::0.103444
+(phenotype(a1,a2) | !phenotype(a3,a2) | !interaction(a1,a3))::0.269831
+(!complex(a1,a2) | !complex(a3,a2) | interaction(a1,a3))::1.2777
+(!protein_class(a1,a2) | !protein_class(a3,a2) | interaction(a1,a3))::1.247
+(!enzyme(a1,a2) | !enzyme(a3,a2) | interaction(a1,a3))::1.85601
+(!function(a1,a2) | !function(a3,a2) | interaction(a1,a3))::-0.011287
+(!location(a1,a2) | !location(a3,a2) | interaction(a1,a3))::-0.00783262
+(!phenotype(a1,a2) | !phenotype(a3,a2) | interaction(a1,a3))::0.0156973
+(complex(a1,a2))::-0.414426
+(enzyme(a1,a2))::-0.581602
+(location(a1,a2))::-3.49031
+(protein_class(a1,a2))::-0.465524
+(phenotype(a1,a2))::-2.72881
+(function(a1,a2))::-3.26969
+(interaction(a1,a2))::-1.85432

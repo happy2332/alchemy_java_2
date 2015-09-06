@@ -1,0 +1,22 @@
+// domain size 10, evidence 0%
+420.58399816645124,0.346,297
+// domain size 10, evidence 40%
+361.2352765143148,0.624,91
+// domain size 20, evidence 0%
+Infinity,1.1199999999999999,1792
+// domain size 20, evidence 40%
+Infinity,0.891,468
+// domain size 50, evidence 0%
+Infinity,3.754,23477
+// domain size 50, evidence 40%
+Infinity,3.141,5487
+// domain size 100, evidence 0%
+Infinity,13.446,176952
+// domain size 100, evidence 40%
+Infinity,6.1899999999999995,39772
+// domain size 200, evidence 0%
+Infinity,79.908,1373902
+// domain size 200, evidence 40%
+Infinity,25.95,302742
+// domain size 300, evidence 40%
+Infinity,66.41199999999999,1004912

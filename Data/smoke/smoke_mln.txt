@@ -1,0 +1,11 @@
+#domains
+dom1={0, ..., 2}
+#predicates
+S(dom1)
+C(dom1)
+//F(dom1,dom1)
+#formulas
+//(S(x) | F(x,y))::1
+(S(x) | C(y))::1
+//(C(x))::2
+

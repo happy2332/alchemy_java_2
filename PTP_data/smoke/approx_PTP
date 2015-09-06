@@ -1,0 +1,11 @@
+PTP smoker : 30% evidence, 30 constants
+Z = 1.6722422800806943E146
+Time taken for 100 iterations : 86.868 sec
+
+50% evidence 50 constants
+Z = 1.086300893731009E260
+Time taken for 100 iterations : 134.206 sec
+
+90% evidence
+Time taken for 100 iterations : 23.525 sec
+Z = 5.212816952626024E25

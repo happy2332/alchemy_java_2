@@ -1,0 +1,14 @@
+//predicate declarations
+advisedBy(person,person)
+tempAdvisedBy(person,person)
+
+
+//function declarations
+
+
+// 0       !professor(x) v !hasPosition(x,Faculty) v advisedBy(s,x) v tempAdvisedBy(s,x)
+1.0       advisedBy(a2,a1) v tempAdvisedBy(a2,a1)
+
+// 0       !advisedBy(a,b) v !advisedBy(b,a)
+1.0       !advisedBy(a1,a2) v !advisedBy(a2,a1)
+

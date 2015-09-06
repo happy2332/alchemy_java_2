@@ -1,0 +1,13 @@
+#domains
+dom1={0, ..., 9}
+
+#predicates
+S(dom1)
+C(dom1)
+F(dom1,dom1)
+
+#formulas
+(!S(x))::0.00001
+(!C(x))::0.00001
+(!S(x) | C(x))::0.00001
+(!S(x) | !F(x,y) | S(y))::0.00001 

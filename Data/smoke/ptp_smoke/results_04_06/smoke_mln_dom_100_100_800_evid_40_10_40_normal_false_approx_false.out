@@ -1,0 +1,9 @@
+startDom = 100, domStepSize = 100, endDom = 800, startEvid = 40, evidStepSize = 10, endEvid = 40
+Infinity,2.216,2225
+Infinity,3.523,4445
+Infinity,5.259,6665
+Infinity,9.942,8885
+Infinity,12.165,11105
+Infinity,14.827,13325
+Infinity,16.56,15545
+Infinity,17.65,17765

@@ -1,0 +1,60 @@
+//predicate declarations
+hasPosition(person,position)
+samePhase(phase,phase)
+advisedBy(person,person)
+sameProject(project,project)
+professor(person)
+sameCourse(course,course)
+tempAdvisedBy(person,person)
+publication(title,person)
+inPhase(person,phase)
+yearsInProgram(person,integer)
+samePerson(person,person)
+sameQuarter(quarter,quarter)
+ta(course,person,quarter)
+sameLevel(level,level)
+taughtBy(course,person,quarter)
+student(person)
+samePosition(position,position)
+introCourse(course)
+courseLevel(course,level)
+projectMember(project,person)
+sameInteger(integer,integer)
+sameTitle(title,title)
+
+//function declarations
+
+
+// 0       !advisedBy(p,s) v !yearsInProgram(p,Year_1)
+1.0       !advisedBy(a1,a2) v !yearsInProgram(a1,Year_1)
+
+// 0       !yearsInProgram(p,x) v sameInteger(x,y) v !yearsInProgram(p,y)
+1.0       !yearsInProgram(a1,a2) v !yearsInProgram(a1,a3) v sameInteger(a2,a3)
+
+// 0       advisedBy(x,y)
+//1.0       advisedBy(a1,a2)
+
+// 0       yearsInProgram(x,y)
+1.0       yearsInProgram(a1,a2)
+
+// 0       sameInteger(x,y)
+1.0       sameInteger(a1,a2)
+
+// 0       EXIST y !student(x) v advisedBy(x,y) v tempAdvisedBy(x,y)
+//1.0  EXIST y !student(x) v advisedBy(x,y) v tempAdvisedBy(x,y)
+
+// 0       EXIST y !professor(x) v hasPosition(x,Faculty_visiting) v advisedBy(y,x)
+//1.0  EXIST y !professor(x) v hasPosition(x,Faculty_visiting) v advisedBy(y,x)
+
+// 0       EXIST y !taughtBy(c,x,q) v ta(c,y,q)
+//1.0  EXIST y !taughtBy(c,x,q) v ta(c,y,q)
+
+// 0       EXIST y !ta(c,x,q) v taughtBy(c,y,q)
+//1.0  EXIST y !ta(c,x,q) v taughtBy(c,y,q)
+
+// 0       EXIST p !inPhase(x,Post_Generals) v publication(p,x)
+//1.0  EXIST p !inPhase(x,Post_Generals) v publication(p,x)
+
+// 0       EXIST y !professor(x) v hasPosition(x,y)
+//1.0  EXIST y !professor(x) v hasPosition(x,y)
+

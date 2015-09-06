@@ -1,0 +1,10 @@
+#predicates
+actor(person)
+director(person)
+movie(mname,person)
+workedUnder(person,person)
+
+#formulas
+0.7 !actor(a1) v !director(a1)
+1.2 !director(a1) v !workedUnder(a1,a2)
+1.4 !movie(a1,a2) v !workedUnder(a2,a3) v movie(a1,a3)

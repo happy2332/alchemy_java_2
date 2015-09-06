@@ -1,0 +1,51 @@
+count = 0
+evidence file : 0
+Time taken to create clauses in hyperCube form : 241 ms
+Z = Infinity
+Time taken for 10 iterations : 20.34 sec
+Z = Infinity
+evidence file : 1
+Time taken to create clauses in hyperCube form : 71 ms
+Z = 1.3409877072109217E304
+Time taken for 10 iterations : 76.401 sec
+Z = 1.3409877072109217E304
+evidence file : 2
+Time taken to create clauses in hyperCube form : 75 ms
+Z = 1.3394474470337214E269
+Time taken for 10 iterations : 87.796 sec
+Z = 1.3394474470337214E269
+evidence file : 3
+Time taken to create clauses in hyperCube form : 86 ms
+Z = 1.0103395733874706E232
+Time taken for 10 iterations : 87.83 sec
+Z = 1.0103395733874706E232
+evidence file : 4
+Time taken to create clauses in hyperCube form : 73 ms
+Z = 1.7490095813918826E197
+Time taken for 10 iterations : 74.553 sec
+Z = 1.7490095813918826E197
+evidence file : 5
+Time taken to create clauses in hyperCube form : 76 ms
+Z = 1.7021713044101104E165
+Time taken for 10 iterations : 62.103 sec
+Z = 1.7021713044101104E165
+evidence file : 6
+Time taken to create clauses in hyperCube form : 82 ms
+Z = 1.162431787649253E131
+Time taken for 10 iterations : 49.437 sec
+Z = 1.162431787649253E131
+evidence file : 7
+Time taken to create clauses in hyperCube form : 83 ms
+Z = 1.2100964634862013E98
+Time taken for 10 iterations : 35.557 sec
+Z = 1.2100964634862013E98
+evidence file : 8
+Time taken to create clauses in hyperCube form : 83 ms
+Z = 1.1146937480095938E65
+Time taken for 10 iterations : 25.591 sec
+Z = 1.1146937480095938E65
+evidence file : 9
+Time taken to create clauses in hyperCube form : 92 ms
+Z = 1.6575758683765117E32
+Time taken for 10 iterations : 12.343 sec
+Z = 1.6575758683765117E32

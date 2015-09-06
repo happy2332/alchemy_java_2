@@ -1,0 +1,50 @@
+evidence file : 0
+Time taken for exact inference : 0.273 sec
+No. of groundings handled : 368
+No. of hyperCubes formed : 4
+Z = 1.3306410521019114E36
+evidence file : 1
+Time taken for exact inference : 10.716 sec
+No. of groundings handled : 7303
+No. of hyperCubes formed : 13
+Z = 4.839174143256565E24
+evidence file : 2
+Time taken for exact inference : 3.63 sec
+No. of groundings handled : 1966
+No. of hyperCubes formed : 20
+Z = 2.8837957409035552E17
+evidence file : 3
+Time taken for exact inference : 2.796 sec
+No. of groundings handled : 1735
+No. of hyperCubes formed : 23
+Z = 2.252855593281668E15
+evidence file : 4
+Time taken for exact inference : 2.348 sec
+No. of groundings handled : 1614
+No. of hyperCubes formed : 22
+Z = 3.519946063695561E13
+evidence file : 5
+Time taken for exact inference : 1.299 sec
+No. of groundings handled : 599
+No. of hyperCubes formed : 20
+Z = 8.592587146678585E9
+evidence file : 6
+Time taken for exact inference : 0.619 sec
+No. of groundings handled : 230
+No. of hyperCubes formed : 20
+Z = 1.6781222044119928E7
+evidence file : 7
+Time taken for exact inference : 0.207 sec
+No. of groundings handled : 72
+No. of hyperCubes formed : 15
+Z = 16386.4987539558
+evidence file : 8
+Time taken for exact inference : 0.235 sec
+No. of groundings handled : 60
+No. of hyperCubes formed : 14
+Z = 2048.2764990984974
+evidence file : 9
+Time taken for exact inference : 0.037 sec
+No. of groundings handled : 10
+No. of hyperCubes formed : 8
+Z = 64.00400012800277

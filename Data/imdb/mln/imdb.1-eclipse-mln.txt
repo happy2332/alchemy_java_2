@@ -1,0 +1,14 @@
+#domains
+person={0, ... ,57}
+mname={0, ... ,3}
+
+#predicates
+director(person)
+movie(mname,person)
+workedUnder(person,person)
+actor(person)
+
+#formulas
+(!actor(a1) | !director(a1))::0.7
+(!director(a1) | !workedUnder(a1,a2))::1.2
+(!movie(a1,a2) | !workedUnder(a2,a3) | movie(a1,a3))::1.4

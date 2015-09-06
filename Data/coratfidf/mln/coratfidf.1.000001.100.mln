@@ -1,0 +1,167 @@
+//predicate declarations
+TitleScore40(title,title)
+VenueScore100(venue,venue)
+TitleScore0(title,title)
+SameAuthor(author,author)
+TitleScore60(title,title)
+AuthorScore20(author,author)
+SameTitle(title,title)
+TitleScore80(title,title)
+AuthorScore40(author,author)
+AuthorScore0(author,author)
+AuthorScore60(author,author)
+AuthorScore80(author,author)
+VenueScore20(venue,venue)
+VenueScore0(venue,venue)
+SameBib(bib,bib)
+VenueScore40(venue,venue)
+Title(bib,title)
+VenueScore60(venue,venue)
+Author(bib,author)
+TitleScore100(title,title)
+SameVenue(venue,venue)
+VenueScore80(venue,venue)
+Venue(bib,venue)
+AuthorScore100(author,author)
+TitleScore20(title,title)
+
+//function declarations
+
+// -0.389862  !SameBib(b1,b2)
+-0.389862  !SameBib(a1,a2)
+
+// -2.33902  !SameAuthor(a1,a2)
+-2.33902  !SameAuthor(a1,a2)
+
+// -0.144731  !SameTitle(t1,t2)
+-0.144731  !SameTitle(a1,a2)
+
+// 0.432549  !SameVenue(v1,v2)
+0.432549  !SameVenue(a1,a2)
+
+// 11.5123  AuthorScore100(a1,a2) => SameAuthor(a1,a2)
+11.5123  SameAuthor(a1,a2) v !AuthorScore100(a1,a2)
+
+// 11.5123  AuthorScore80(a1,a2) => SameAuthor(a1,a2)
+11.5123  SameAuthor(a1,a2) v !AuthorScore80(a1,a2)
+
+// 1.42958  AuthorScore60(a1,a2) => SameAuthor(a1,a2)
+1.42958  SameAuthor(a1,a2) v !AuthorScore60(a1,a2)
+
+// 2.45039  AuthorScore40(a1,a2) => SameAuthor(a1,a2)
+2.45039  SameAuthor(a1,a2) v !AuthorScore40(a1,a2)
+
+// 11.5123  AuthorScore20(a1,a2) => SameAuthor(a1,a2)
+11.5123  SameAuthor(a1,a2) v !AuthorScore20(a1,a2)
+
+// -1.17935  AuthorScore0(a1,a2) => SameAuthor(a1,a2)
+-1.17935  SameAuthor(a1,a2) v !AuthorScore0(a1,a2)
+
+// 4.60558  TitleScore100(t1,t2) => SameTitle(t1,t2)
+4.60558  SameTitle(a1,a2) v !TitleScore100(a1,a2)
+
+// 3.15711  TitleScore80(t1,t2) => SameTitle(t1,t2)
+3.15711  SameTitle(a1,a2) v !TitleScore80(a1,a2)
+
+// 2.05874  TitleScore60(t1,t2) => SameTitle(t1,t2)
+2.05874  SameTitle(a1,a2) v !TitleScore60(a1,a2)
+
+// 1.33497  TitleScore40(t1,t2) => SameTitle(t1,t2)
+1.33497  SameTitle(a1,a2) v !TitleScore40(a1,a2)
+
+// -2.21509  TitleScore20(t1,t2) => SameTitle(t1,t2)
+-2.21509  SameTitle(a1,a2) v !TitleScore20(a1,a2)
+
+// -11.5138  TitleScore0(t1,t2) => SameTitle(t1,t2)
+-11.5138  SameTitle(a1,a2) v !TitleScore0(a1,a2)
+
+// 3.24281  VenueScore100(v1,v2) => SameVenue(v1,v2)
+3.24281  SameVenue(a1,a2) v !VenueScore100(a1,a2)
+
+// 1.12059  VenueScore80(v1,v2) => SameVenue(v1,v2)
+1.12059  SameVenue(a1,a2) v !VenueScore80(a1,a2)
+
+// -0.0143585  VenueScore60(v1,v2) => SameVenue(v1,v2)
+-0.0143585  SameVenue(a1,a2) v !VenueScore60(a1,a2)
+
+// -0.0787596  VenueScore40(v1,v2) => SameVenue(v1,v2)
+-0.0787596  SameVenue(a1,a2) v !VenueScore40(a1,a2)
+
+// -0.993315  VenueScore20(v1,v2) => SameVenue(v1,v2)
+-0.993315  SameVenue(a1,a2) v !VenueScore20(a1,a2)
+
+// -1.3723  VenueScore0(v1,v2) => SameVenue(v1,v2)
+-1.3723  SameVenue(a1,a2) v !VenueScore0(a1,a2)
+
+// -0.1498  Author(b1,a1) ^ Author(b2,a2) ^ SameAuthor(a1,a2) => SameBib(b1,b2)
+-0.1498  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !SameAuthor(a2,a4)
+
+// 4.85934  Title(b1,t1) ^ Title(b2,t2) ^ SameTitle(t1,t2) => SameBib(b1,b2)
+4.85934  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !SameTitle(a2,a4)
+
+// 3.47862  Venue(b1,v1) ^ Venue(b2,v2) ^ SameVenue(v1,v2) => SameBib(b1,b2)
+3.47862  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !SameVenue(a2,a4)
+
+// 6.69135  Author(b1,a1) ^ Author(b2,a2) ^ SameBib(b1,b2) => SameAuthor(a1,a2)
+6.69135  !Author(a1,a2) v !Author(a3,a4) v !SameBib(a1,a3) v SameAuthor(a2,a4)
+
+// 7.04023  Title(b1,t1) ^ Title(b2,t2) ^ SameBib(b1,b2) => SameTitle(t1,t2)
+7.04023  !Title(a1,a2) v !Title(a3,a4) v !SameBib(a1,a3) v SameTitle(a2,a4)
+
+// 2.2201  Venue(b1,v1) ^ Venue(b2,v2) ^ SameBib(b1,b2) => SameVenue(v1,v2)
+2.2201  !Venue(a1,a2) v !Venue(a3,a4) v !SameBib(a1,a3) v SameVenue(a2,a4)
+
+// 0.281996  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore100(a1,a2) => SameBib(b1,b2)
+0.281996  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore100(a2,a4)
+
+// 1.79843  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore80(a1,a2) => SameBib(b1,b2)
+1.79843  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore80(a2,a4)
+
+// 0.834668  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore60(a1,a2) => SameBib(b1,b2)
+0.834668  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore60(a2,a4)
+
+// 1.44402  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore40(a1,a2) => SameBib(b1,b2)
+1.44402  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore40(a2,a4)
+
+// -0.474358  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore20(a1,a2) => SameBib(b1,b2)
+-0.474358  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore20(a2,a4)
+
+// 1.28655  Author(b1,a1) ^ Author(b2,a2) ^ AuthorScore0(a1,a2) => SameBib(b1,b2)
+1.28655  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !AuthorScore0(a2,a4)
+
+// 4.30139  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore100(t1,t2) => SameBib(b1,b2)
+4.30139  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore100(a2,a4)
+
+// 1.80276  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore80(t1,t2) => SameBib(b1,b2)
+1.80276  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore80(a2,a4)
+
+// 1.83003  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore60(t1,t2) => SameBib(b1,b2)
+1.83003  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore60(a2,a4)
+
+// -1.01312  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore40(t1,t2) => SameBib(b1,b2)
+-1.01312  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore40(a2,a4)
+
+// -4.22255  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore20(t1,t2) => SameBib(b1,b2)
+-4.22255  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore20(a2,a4)
+
+// -11.5376  Title(b1,t1) ^ Title(b2,t2) ^ TitleScore0(t1,t2) => SameBib(b1,b2)
+-11.5376  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !TitleScore0(a2,a4)
+
+// 4.12444  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore100(v1,v2) => SameBib(b1,b2)
+4.12444  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore100(a2,a4)
+
+// 2.00534  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore80(v1,v2) => SameBib(b1,b2)
+2.00534  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore80(a2,a4)
+
+// 1.30244  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore60(v1,v2) => SameBib(b1,b2)
+1.30244  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore60(a2,a4)
+
+// 1.5071  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore40(v1,v2) => SameBib(b1,b2)
+1.5071  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore40(a2,a4)
+
+// -1.02385  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore20(v1,v2) => SameBib(b1,b2)
+-1.02385  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore20(a2,a4)
+
+// -0.764562  Venue(b1,v1) ^ Venue(b2,v2) ^ VenueScore0(v1,v2) => SameBib(b1,b2)
+-0.764562  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !VenueScore0(a2,a4)
+

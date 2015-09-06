@@ -1,0 +1,13 @@
+//Smokes evidence, domain size : 60, 10% evidence
+S(34)
+C(34)
+!S(49)
+!C(49)
+!S(48)
+!C(48)
+S(8)
+C(8)
+!S(21)
+C(21)
+!S(47)
+C(47)

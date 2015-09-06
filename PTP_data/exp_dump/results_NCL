@@ -1,0 +1,32 @@
+evidence file : 5
+Time taken to create clauses in hyperCube form : 232 ms
+Time taken for exact inference : 186.403 sec
+No. of groundings handled : 1001346
+No. of mlns formed : 62349
+No. of hyperCubes formed : 35
+Z = 3.7796587546347955E15
+
+evidence file : 7
+Time taken to create clauses in hyperCube form : 124 ms
+Time taken for exact inference : 26.853 sec
+No. of groundings handled : 133510
+No. of mlns formed : 9217
+No. of hyperCubes formed : 35
+Z = 2.0088603443648942E9
+
+evidence file : 9
+Time taken to create clauses in hyperCube form : 115 ms
+Time taken for exact inference : 1.684 sec
+No. of groundings handled : 2114
+No. of mlns formed : 273
+No. of hyperCubes formed : 35
+Z = 1195.5442958607402
+
+evidence file : 3
+Time taken to create clauses in hyperCube form : 168 ms
+Time taken for exact inference : 809.614 sec
+No. of groundings handled : 3982562
+No. of mlns formed : 237235
+No. of hyperCubes formed : 35
+Z = 8.226927383108502E21
+

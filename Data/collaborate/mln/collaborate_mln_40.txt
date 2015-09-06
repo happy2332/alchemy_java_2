@@ -1,0 +1,20 @@
+#domains
+person={0, ..., 39}
+
+#predicates
+WorksInArea0(person)
+WorksInArea1(person)
+WorksInArea2(person)
+Collaborate(person,person)
+CoAuthor(person,person)
+
+#formulas
+(WorksInArea0(x))::1
+(WorksInArea1(x))::1
+(WorksInArea2(x))::1
+(Collaborate(x,y))::2
+(CoAuthor(x,y))::3
+(!WorksInArea0(x) | !WorksInArea0(y) | Collaborate(x,y))::2
+(!WorksInArea1(x) | !WorksInArea1(y) | Collaborate(x,y))::2
+(!WorksInArea2(x) | !WorksInArea2(y) | Collaborate(x,y))::2
+(!Collaborate(x,y) | CoAuthor(x,y))::3

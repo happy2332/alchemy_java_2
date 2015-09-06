@@ -1,0 +1,74 @@
+// 1.1677  !SameBib(b1,b2)
+1.1677  !SameBib(a1,a2)
+
+// -0.74692  !SameAuthor(a1,a2)
+-0.74692  !SameAuthor(a1,a2)
+
+// 0.735051  !SameTitle(t1,t2)
+0.735051  !SameTitle(a1,a2)
+
+// 0.228556  !SameVenue(v1,v2)
+0.228556  !SameVenue(a1,a2)
+
+// 2.36759  HasWordAuthor(a1,w) ^ HasWordAuthor(a2,w) => SameAuthor(a1,a2)
+2.36759  SameAuthor(a1,a2) v !HasWordAuthor(a1,a3) v !HasWordAuthor(a2,a3)
+
+// -0.940504  !HasWordAuthor(a1,w) ^ HasWordAuthor(a2,w) => SameAuthor(a1,a2)
+-0.940504  SameAuthor(a1,a2) v HasWordAuthor(a1,a3) v !HasWordAuthor(a2,a3)
+
+// -0.969853  HasWordAuthor(a1,w) ^ !HasWordAuthor(a2,w) => SameAuthor(a1,a2)
+-0.969853  SameAuthor(a1,a2) v HasWordAuthor(a2,a3) v !HasWordAuthor(a1,a3)
+
+// 1.26558  HasWordTitle(a1,w) ^ HasWordTitle(a2,w) => SameTitle(a1,a2)
+1.26558  SameTitle(a1,a2) v !HasWordTitle(a1,a3) v !HasWordTitle(a2,a3)
+
+// -0.48578  !HasWordTitle(a1,w) ^ HasWordTitle(a2,w) => SameTitle(a1,a2)
+-0.48578  SameTitle(a1,a2) v HasWordTitle(a1,a3) v !HasWordTitle(a2,a3)
+
+// -0.486268  HasWordTitle(a1,w) ^ !HasWordTitle(a2,w) => SameTitle(a1,a2)
+-0.486268  SameTitle(a1,a2) v HasWordTitle(a2,a3) v !HasWordTitle(a1,a3)
+
+// 0.480137  HasWordVenue(a1,w) ^ HasWordVenue(a2,w) => SameVenue(a1,a2)
+0.480137  SameVenue(a1,a2) v !HasWordVenue(a1,a3) v !HasWordVenue(a2,a3)
+
+// -0.457127  !HasWordVenue(a1,w) ^ HasWordVenue(a2,w) => SameVenue(a1,a2)
+-0.457127  SameVenue(a1,a2) v HasWordVenue(a1,a3) v !HasWordVenue(a2,a3)
+
+// -0.456966  HasWordVenue(a1,w) ^ !HasWordVenue(a2,w) => SameVenue(a1,a2)
+-0.456966  SameVenue(a1,a2) v HasWordVenue(a2,a3) v !HasWordVenue(a1,a3)
+
+// -0.127237  Author(bc1,a1) ^ Author(bc2,a2) ^ HasWordAuthor(a1,w) ^ HasWordAuthor(a2,w) => SameBib(bc1,bc2)
+-0.127237  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v !HasWordAuthor(a2,a5) v !HasWordAuthor(a4,a5)
+
+// -0.315309  Author(bc1,a1) ^ Author(bc2,a2) ^ !HasWordAuthor(a1,w) ^ HasWordAuthor(a2,w) => SameBib(bc1,bc2)
+-0.315309  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v HasWordAuthor(a2,a5) v !HasWordAuthor(a4,a5)
+
+// -0.319496  Author(bc1,a1) ^ Author(bc2,a2) ^ HasWordAuthor(a1,w) ^ !HasWordAuthor(a2,w) => SameBib(bc1,bc2)
+-0.319496  !Author(a1,a2) v !Author(a3,a4) v SameBib(a1,a3) v HasWordAuthor(a4,a5) v !HasWordAuthor(a2,a5)
+
+// 2.82032  Title(bc1,t1) ^ Title(bc2,t2) ^ HasWordTitle(t1,w) ^ HasWordTitle(t2,w) => SameBib(bc1,bc2)
+2.82032  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v !HasWordTitle(a2,a5) v !HasWordTitle(a4,a5)
+
+// -1.67818  Title(bc1,t1) ^ Title(bc2,t2) ^ !HasWordTitle(t1,w) ^ HasWordTitle(t2,w) => SameBib(bc1,bc2)
+-1.67818  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v HasWordTitle(a2,a5) v !HasWordTitle(a4,a5)
+
+// -1.67652  Title(bc1,t1) ^ Title(bc2,t2) ^ HasWordTitle(t1,w) ^ !HasWordTitle(t2,w) => SameBib(bc1,bc2)
+-1.67652  !Title(a1,a2) v !Title(a3,a4) v SameBib(a1,a3) v HasWordTitle(a4,a5) v !HasWordTitle(a2,a5)
+
+// 0.694463  Venue(bc1,v1) ^ Venue(bc2,v2) ^ HasWordVenue(v1,w) ^ HasWordVenue(v2,w) => SameBib(bc1,bc2)
+0.694463  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v !HasWordVenue(a2,a5) v !HasWordVenue(a4,a5)
+
+// -0.42121  Venue(bc1,v1) ^ Venue(bc2,v2) ^ !HasWordVenue(v1,w) ^ HasWordVenue(v2,w) => SameBib(bc1,bc2)
+-0.42121  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v HasWordVenue(a2,a5) v !HasWordVenue(a4,a5)
+
+// -0.419318  Venue(bc1,v1) ^ Venue(bc2,v2) ^ HasWordVenue(v1,w) ^ !HasWordVenue(v2,w) => SameBib(bc1,bc2)
+-0.419318  !Venue(a1,a2) v !Venue(a3,a4) v SameBib(a1,a3) v HasWordVenue(a4,a5) v !HasWordVenue(a2,a5)
+
+// 0       Author(a1,a2)
+0       Author(a1,a2)
+
+// 0       Title(a1,a2)
+0       Title(a1,a2)
+
+// 0       Venue(a1,a2)
+0       Venue(a1,a2)

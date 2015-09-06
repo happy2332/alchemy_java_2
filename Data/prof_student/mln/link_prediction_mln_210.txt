@@ -1,0 +1,19 @@
+#domains
+prof={0,..., 99}
+student={0, ..., 209}
+
+#predicates
+GoodProf(prof)
+GoodStudent(student)
+FutureProf(student)
+Advises(prof,student)
+CoAuthor(prof,student)
+
+#formulas
+(GoodProf(x))::2
+(GoodStudent(x))::1
+(FutureProf(x))::3
+(Advises(x,y))::4
+(CoAuthor(x,y))::5
+(!GoodStudent(x) | !GoodProf(y) | !Advises(y,x) | FutureProf(x))::1
+(!CoAuthor(x,y) | Advises(x,y))::2

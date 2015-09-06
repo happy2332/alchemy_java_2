@@ -1,0 +1,220 @@
+//predicate declarations
+
+//function declarations
+
+// 0       PageClass(Course,p)
+
+// 0       PageClass(Department,p)
+
+// 0       PageClass(Faculty,p)
+
+// 0       PageClass(Person,p)
+
+// 0       PageClass(ResearchProject,p)
+
+// 0       PageClass(Staff,p)
+
+// 0       PageClass(Student,p)
+
+// 0       Has(w,p) => PageClass(Course,p)
+
+// 0       Has(w,p) => PageClass(Department,p)
+
+// 0       Has(w,p) => PageClass(Faculty,p)
+
+// 0       Has(w,p) => PageClass(Person,p)
+
+// 0       Has(w,p) => PageClass(ResearchProject,p)
+
+// 0       Has(w,p) => PageClass(Staff,p)
+
+// 0       Has(w,p) => PageClass(Student,p)
+
+// -0.409794  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// -0.159422  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// 1.17072  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -0.176113  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// -0.119997  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// 0.0116265  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -1.06791  PageClass(Course,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// -0.359405  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// 2.42943  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// -0.537347  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -1.5635  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// -0.0732819  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// 0.0774438  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -0.24371  PageClass(Department,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// 0.561926  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// 0.294689  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// 0.118279  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -1.22452  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// 0.372728  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// 0.102772  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -1.12995  PageClass(Faculty,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// -0.0175872  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// 0.716482  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// -0.0625339  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -0.427443  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// 0.27723  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// 0.0397177  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -0.172705  PageClass(Person,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// -0.957566  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// -0.267432  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// -0.142343  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// 0.503723  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// 0.040433  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// -0.32493  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -0.445689  PageClass(ResearchProject,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// -0.138929  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// -0.400369  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// 0.288444  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -0.566754  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// 0.0877414  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// 0.47603  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -0.191674  PageClass(Staff,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// -0.21579  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Course,p2)
+
+// 0.545614  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Department,p2)
+
+// -0.181973  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Faculty,p2)
+
+// -0.626792  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Person,p2)
+
+// 0.147109  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(ResearchProject,p2)
+
+// -0.142705  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Staff,p2)
+
+// -0.51836  PageClass(Student,p1) ^ LinkTo(p1,p2) => PageClass(Student,p2)
+
+// 0       PageClass(a1,a2)
+
+// 0       Has(a1,a2)
+
+// -6.07333  LinkTo(a1,a2)
+
+#domains
+//word={0, ... ,764}
+page={0, ... ,53}
+//class={0, ... ,4}
+
+#predicates
+//PageClass_0_Staff(page)
+PageClass_0_Course(page)
+LinkTo(page,page)
+PageClass_0_Person(page)
+PageClass_0_Faculty(page)
+//PageClass_0_ResearchProject(page)
+//PageClass(class,page)
+PageClass_0_Student(page)
+//Has(word,page)
+PageClass_0_Department(page)
+
+#formulas
+//(PageClass_0_Course(a1))::0
+//(PageClass_0_Department(a1))::0
+//(PageClass_0_Faculty(a1))::0
+//(PageClass_0_Person(a1))::0
+//(PageClass_0_ResearchProject(a1))::0
+//(PageClass_0_Staff(a1))::0
+//(PageClass_0_Student(a1))::0
+//(PageClass_0_Course(a1) | !Has(a2,a1))::0
+//(PageClass_0_Department(a1) | !Has(a2,a1))::0
+//(PageClass_0_Faculty(a1) | !Has(a2,a1))::0
+//(PageClass_0_Person(a1) | !Has(a2,a1))::0
+//(PageClass_0_ResearchProject(a1) | !Has(a2,a1))::0
+//(PageClass_0_Staff(a1) | !Has(a2,a1))::0
+//(PageClass_0_Student(a1) | !Has(a2,a1))::0
+(PageClass_0_Course(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::0.409794
+(PageClass_0_Department(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::0.159422
+(PageClass_0_Faculty(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::1.17072
+(PageClass_0_Person(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::0.176113
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::0.119997
+//(PageClass_0_Staff(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::0.0116265
+(PageClass_0_Student(a1) | !PageClass_0_Course(a2) | !LinkTo(a2,a1))::1.06791
+(PageClass_0_Course(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::0.359405
+(PageClass_0_Department(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::2.42943
+(PageClass_0_Faculty(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::0.537347
+(PageClass_0_Person(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::1.5635
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::0.0732819
+//(PageClass_0_Staff(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::0.0774438
+(PageClass_0_Student(a1) | !PageClass_0_Department(a2) | !LinkTo(a2,a1))::0.24371
+(PageClass_0_Course(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::0.561926
+(PageClass_0_Department(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::0.294689
+(PageClass_0_Faculty(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::0.118279
+(PageClass_0_Person(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::1.22452
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::0.372728
+//(PageClass_0_Staff(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::0.102772
+(PageClass_0_Student(a1) | !PageClass_0_Faculty(a2) | !LinkTo(a2,a1))::1.12995
+(PageClass_0_Course(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.0175872
+(PageClass_0_Department(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.716482
+(PageClass_0_Faculty(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.0625339
+(PageClass_0_Person(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.427443
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.27723
+//(PageClass_0_Staff(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.0397177
+(PageClass_0_Student(a1) | !PageClass_0_Person(a2) | !LinkTo(a2,a1))::0.172705
+//(PageClass_0_Course(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.957566
+//(PageClass_0_Department(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.267432
+//(PageClass_0_Faculty(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.142343
+//(PageClass_0_Person(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.503723
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.040433
+//(PageClass_0_Staff(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.32493
+//(PageClass_0_Student(a1) | !PageClass_0_ResearchProject(a2) | !LinkTo(a2,a1))::0.445689
+//(PageClass_0_Course(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.138929
+//(PageClass_0_Department(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.400369
+//(PageClass_0_Faculty(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.288444
+//(PageClass_0_Person(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.566754
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.0877414
+//(PageClass_0_Staff(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.47603
+//(PageClass_0_Student(a1) | !PageClass_0_Staff(a2) | !LinkTo(a2,a1))::0.191674
+(PageClass_0_Course(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.21579
+(PageClass_0_Department(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.545614
+(PageClass_0_Faculty(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.181973
+(PageClass_0_Person(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.626792
+//(PageClass_0_ResearchProject(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.147109
+//(PageClass_0_Staff(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.142705
+(PageClass_0_Student(a1) | !PageClass_0_Student(a2) | !LinkTo(a2,a1))::0.51836
+//(PageClass(a1,a2))::0
+//(Has(a1,a2))::0
+(LinkTo(a1,a2))::6.07333

@@ -1,0 +1,5 @@
+JobOffered(1,1)
+JobOffered(8,4)
+JobOffered(6,3)
+JobOffered(9,0)
+JobOffered(2,3)

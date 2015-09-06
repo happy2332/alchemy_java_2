@@ -1,0 +1,41 @@
+evidence 0%
+Time taken for 10 iterations : 7.425 sec
+Z = 8.213310956223866E235
+
+evidence 30%
+Time taken for 100 iterations : 1019.512 sec
+Z = 9.56198153754818E160
+
+evidence 10%
+Time taken for 100 iterations : 404.939 sec
+Z = 2.1206878966155266E209
+
+evidence 20%
+Time taken for 10 iterations : 74.183 sec
+Z = 1.1618192338028087E186
+
+evidence 40%
+Time taken for 10 iterations : 94.892 sec
+Z = 8.111127670227853E135
+
+evidence 50%
+Time taken for 10 iterations : 78.163 sec
+Z = 4.159008733150968E112
+
+evidence 60%
+Time taken for 10 iterations : 64.516 sec
+Z = 4.943345226882584E88
+
+evidence 70%
+Time taken for 10 iterations : 51.268 sec
+Z = 8.420939341484504E65
+
+evidence 80%
+Time taken for 10 iterations : 34.799 sec
+Z = 5.242191572328196E43
+
+evidence 90%
+Time taken for 10 iterations : 17.402 sec
+Z = 4.56414831622758E22
+
+

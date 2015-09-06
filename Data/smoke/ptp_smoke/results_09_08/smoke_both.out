@@ -1,0 +1,12 @@
+// domain size 10, evidence 40%
+644.1010361959067,0.75,227
+// domain size 20, evidence 40%
+Infinity,0.9610000000000001,449
+// domain size 50, evidence 40%
+Infinity,1.428,1115
+// domain size 100, evidence 40%
+Infinity,2.336,2225
+// domain size 200, evidence 40%
+Infinity,4.175,4445
+// domain size 300, evidence 40%
+Infinity,7.17,6665

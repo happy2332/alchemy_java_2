@@ -1,0 +1,24 @@
+#domains
+author={0,...,33}
+title={0,...,49}
+venue={0,...,77}
+bib={0,...,243}
+word={0,...,193}
+
+#predicates
+SameAuthor(author,author)
+SameTitle(title,title)
+SameBib(bib,bib)
+Title(bib,title)
+Author(bib,author)
+HasWordTitle(title,word)
+SameVenue(venue,venue)
+HasWordAuthor(author,word)
+Venue(bib,venue)
+HasWordVenue(venue,word)
+
+#formulas
+(!SameBib(a1,a2))::1.1677
+(!SameAuthor(a1,a2))::-0.74692
+(!SameTitle(a1,a2))::0.735051  
+0.228556  !SameVenue(a1,a2)

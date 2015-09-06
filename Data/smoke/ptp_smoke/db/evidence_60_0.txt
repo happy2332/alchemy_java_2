@@ -1,0 +1,1 @@
+//Smokes evidence, domain size : 60, 0% evidence

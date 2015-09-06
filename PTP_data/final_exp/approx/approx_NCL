@@ -1,0 +1,46 @@
+numPreds = 30
+numClauses = 30
+predsPerClause = 3
+numConstants = 30
+numVariables = predsPerClause+1
+
+evidence 90%
+Time taken for 100 iterations : 69.336 sec
+Z = 4.305770645430446E22
+
+evidence 80%
+Time taken for 100 iterations : 100.599 sec
+Z = 5.394648386803427E43
+
+evidence 70%
+Time taken for 100 iterations : 154.428 sec
+Z = 8.316793910007632E65
+
+evidence 60%
+Time taken for 100 iterations : 193.551 sec
+Z = 4.928697665065252E88
+
+evidence 50%
+Time taken for 100 iterations : 229.369 sec
+Z = 4.0972295426737985E112
+
+evidence 40%
+Time taken for 100 iterations : 268.996 sec
+Z = 7.955742634070488E135
+
+evidence 30%
+Time taken for 100 iterations : 293.866 sec
+Z = 9.494570937979198E160
+
+evidence 0%
+Time taken for 10 iterations : 7.26 sec
+Z = 8.228998890723525E235
+
+evidence 10%
+Time taken for 10 iterations : 21.736 sec
+Z = 2.1324837513747493E209
+
+evidence 20%
+Time taken for 10 iterations : 28.465 sec
+Z = 1.1598177358817174E186
+

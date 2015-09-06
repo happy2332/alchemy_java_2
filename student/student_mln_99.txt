@@ -1,0 +1,16 @@
+#domains
+tDom={0, ..., 4}
+sDom={0, ..., 9}
+cDom={0, ..., 9}
+jDom={0, ..., 4}
+
+#predicates
+Takes(sDom, cDom)
+Teaches(tDom, cDom)
+JobOffered(sDom, jDom)
+
+#formulas
+( !Teaches(t, c) | !Takes(s, c) |  JobOffered(s, j)) ::3
+( Teaches(t, c)) ::1
+( Takes(s, c)) ::5
+( !JobOffered(s, j)) ::2

@@ -1,0 +1,7 @@
+GoodStudent(1)
+!GoodStudent(2)
+!GoodStudent(7)
+!GoodStudent(4)
+GoodStudent(9)
+!GoodProf(3)
+!GoodProf(1)

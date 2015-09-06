@@ -1,0 +1,9 @@
+#domains
+dom1={0, ..., 19}
+dom2={0, ..., 2}
+#predicates
+S(dom1)
+C(dom1)
+F(dom1,dom1)
+#formulas
+(F(x,y) | S(x)) :: 0.00004

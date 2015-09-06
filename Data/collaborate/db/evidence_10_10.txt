@@ -1,0 +1,3 @@
+WorksInArea0(4)
+!WorksInArea1(4)
+!WorksInArea2(4)

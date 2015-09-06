@@ -1,0 +1,42 @@
+//predicate declarations
+//hasPosition(person,position)
+//samePhase(phase,phase)
+advisedBy(person,person)
+//sameProject(project,project)
+//professor(person)
+//sameCourse(course,course)
+//tempAdvisedBy(person,person)
+//publication(title,person)
+//inPhase(person,phase)
+yearsInProgram(person,integer)
+//samePerson(person,person)
+//sameQuarter(quarter,quarter)
+//ta(course,person,quarter)
+//sameLevel(level,level)
+//taughtBy(course,person,quarter)
+//student(person)
+//samePosition(position,position)
+//introCourse(course)
+//courseLevel(course,level)
+//projectMember(project,person)
+sameInteger(integer,integer)
+//sameTitle(title,title)
+
+person={P1,P2,P3,P4}
+integer={Year_1,Year_2,Year_3}
+
+//function declarations
+
+
+// 0       !advisedBy(p,s) v !yearsInProgram(p,Year_1)
+1.0       !advisedBy(a1,a2) v !yearsInProgram(a1,Year_1)
+
+// 0       !yearsInProgram(p,x) v sameInteger(x,y) v !yearsInProgram(p,y)
+//1.0       !yearsInProgram(a1,a2) v !yearsInProgram(a1,a3) v sameInteger(a2,a3)
+
+// 0       yearsInProgram(x,y)
+1.0       yearsInProgram(a1,a2)
+
+// 0       sameInteger(x,y)
+//1.0       sameInteger(a1,a2)
+
